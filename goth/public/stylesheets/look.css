@@ -1,0 +1,17 @@
+main img{
+    width: 200px;
+}
+
+.ambos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    text-align: center;
+    padding-bottom:  20px;
+}
+
+.rigth{
+    margin-top: 75px;
+    text-align: center;
+}

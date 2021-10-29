@@ -1,0 +1,21 @@
+.tattoo{
+    text-align: center;
+}
+
+.tattoo img{
+    width: 250px;
+    padding-left: 50px;
+}
+
+.tattoo h2{
+    color: #ff0;
+}
+
+.feet{
+    padding-bottom: 50px;
+}
+
+.unica{
+    text-align: center;
+    padding-bottom: 50px;
+}

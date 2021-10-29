@@ -1,0 +1,23 @@
+.titulo{
+    text-align: center;
+    color: #ffff00;
+}
+
+.libro{
+    margin-left: 5%;
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.libro img{
+    width: 250px;
+    padding-top: 30px;
+}
+
+.descripcion{
+    margin-right: 5%;
+    width: 40%;
+    padding-bottom: 200px;
+    float: right;
+}

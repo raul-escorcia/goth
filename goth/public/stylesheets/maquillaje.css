@@ -1,0 +1,21 @@
+.maquillajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.maquillaje{
+    padding-bottom: 50px;
+}
+.maquillaje img{
+    width: 200px;
+}
+
+.centro{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.centro h2{
+    text-align: left;
+}

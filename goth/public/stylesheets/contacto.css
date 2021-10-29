@@ -1,0 +1,59 @@
+.contacto{
+    margin-left: 5%;
+    margin-bottom: 20px;
+    width: 40%;
+    float: left;
+}
+
+.formulario label{
+    width: 30%;
+    display: inline-block ;
+
+}
+
+.formulario input{ 
+    background-color: #f5c0ec;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.formulario textarea{
+    background-color: #f5c0ec;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+    font-size: 13px;
+    height: 150px;
+    resize: none;
+}
+
+.formulario input[type="submit"]{
+    width: 15%;
+    background-color: #800080;
+    color: #f5c0ec;
+    border: 1px solid #f00;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.redes{
+    margin-right: 5%;
+    float: right;
+}
+
+.redes ul{
+    background-color: #f5c0ec;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    line-height: 50px;
+    color: #00f;
+}
+
+.redes img{
+    width: 170px;
+    border-radius: 5px;
+}

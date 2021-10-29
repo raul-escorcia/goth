@@ -1,0 +1,23 @@
+main{
+    padding-bottom: 40px;
+}
+ 
+#top{
+    text-align: center;
+    color: #ff0;
+}
+
+.intros{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 30px;
+}
+
+.intro img{
+    width: 200px;
+}
+
+.content{
+    color: #f5c0ec;
+    line-height: 40px;
+}

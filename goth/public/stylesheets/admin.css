@@ -1,0 +1,29 @@
+.container{
+    /* background-color: #f5c0ec; */
+    /* border: 1px solid #f00; */
+}
+
+form{
+    background-image: url("/public/images/portal.jpg");
+    /* border: 10px solid #f00; */
+    /* width: 40%; */
+    /* text-align: center; */
+    /* margin-left: 35%; */
+    margin-right: 35%;
+}
+label{
+    width: 30%;
+    display: inline-block;
+}
+
+button{
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 20%;
+}
+
+.mb-3{
+    margin: 5px;
+    margin-left: 20%;
+    width: 300px;
+}

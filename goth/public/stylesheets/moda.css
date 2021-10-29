@@ -1,0 +1,22 @@
+.modas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.moda{
+    padding-bottom: 50px;
+}
+
+.moda img{
+    width: 200px;
+}
+
+.centro{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.centro h2{
+    text-align: left;
+}

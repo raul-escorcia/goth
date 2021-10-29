@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="stylesheets/contacto.css">
+<h2>Contacto</h2>
+<div class="contacto">
+    <h2>Complete el siguiente formulario</h2>
+    <form action="/contacto" method="post" class="formulario">
+        <p>
+            <label for="">Nombre:</label>
+            <input type="text" name="nombre" required>
+        </p>
+        <p>
+            <label for="">Email:</label>
+            <input type="email" name="email" required>
+        </p>
+        <p>
+            <label for="">Teléfono:</label>
+            <input type="text" name="tel">
+        </p>
+        <p>
+            <label for="">Mensaje:</label>
+            <textarea name="comentarios"></textarea>
+        </p>
+        <p class="centrar">
+            <input type="submit">
+        </p>
+    </form>
+    {{#if message}}
+        <script>
+            alert('mensaje enviado correctamente');
+        </script>
+    {{/if}}
+</div>
+<div class="redes">
+    <h2>Otras vias de contacto</h2>
+    <p>También pueden contactarse con nosotros usando los siguientes medios:</p>
+    <ul>
+        <li>Telefono: 123-456-7890</li>
+        <li>FB: <a href="https://www.facebook.com" target="_blank">www.facebook.com/gothspaces</a></li>
+        <li>Twitter:<a href="https://twitter.com/" target="_blank">@gothspaces</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/" target="_blank">gothspaces</a><br /></li>
+    </ul>
+    <center><a href="contacto"><img src="images/contacto.jpg" alt="contacto"></a></center>
+</div>

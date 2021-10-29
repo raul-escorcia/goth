@@ -1,0 +1,12 @@
+.toon{
+    display:flex;
+    justify-content:space-around;
+}
+
+.toon img{
+    width: 200px;
+}
+
+main{
+    padding-bottom: 50px;
+}

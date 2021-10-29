@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goth home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/estilos.css">
+</head>
+<body>
+  <header>
+    <div class="cabecera">
+      <img src="images/img03d.jpg" alt="cabello blanco">
+      <p>Goth Spaces</p>
+      <img src="images/img03.jpg" alt="cabello blanco">
+    </div>
+  </header>
+  <nav>
+    <div class="menus">
+      <div class="menu {{#if isHome}}activo{{/if}}">
+        <a href="/"><img src="images/home.jpg" alt="home"></a>
+        <a href="/">Home</a>
+      </div>
+      <div class="menu {{#if isLiteratura}}activo{{/if}}">
+        <a href="/literatura"><img src="images/literatura.jpg" alt="literatura"></a>
+        <a href="/literatura">Literatura</a>
+      </div>
+      <div class="menu {{#if isLook}}activo{{/if}}">
+        <a href="/look"><img src="images/look.jpg" alt="look"></a>
+        <a href="/look">Look</a>
+      </div>
+      <div class="menu {{#if isMusica}}activo{{/if}}">
+        <a href="/musica"><img src="images/musica.jpg" alt="musica"></a>
+        <a href="/musica">Música</a>
+      </div>
+      <div class="menu {{#if isTattoo}}activo{{/if}}">
+        <a href="/tattoo"><img src="images/tattoo.jpg" alt="tattoo"></a>
+        <a href="/tattoo">Tattoo</a>
+      </div>
+      <div class="menu {{#if isToon}}activo{{/if}}">
+        <a href="/toon"><img src="images/toon.png" alt="toon"></a>
+        <a href="/toon">Toon</a>
+      </div>
+      <div class="menu {{#if isContacto}}activo{{/if}}">
+        <a href="/contacto"><img src="images/contacto.jpg" alt="contacto"></a>
+        <a href="/contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    {{{body}}}
+  </main>
+  <footer>
+    <section class="foot">
+      <p>MMXXI Raul Escorcia</p>
+    </section>
+  </footer>
+</body>
+</html>
