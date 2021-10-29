@@ -57,7 +57,7 @@ var neck04Router = require('./routes/neck04');
 var toonRouter = require('./routes/toon');
 var contactoRouter = require('./routes/contacto');
 var loginRouter = require('./routes/admin/login');
-var adminRouter = require('./routes/admin/novedades');
+var panelRouter = require('./routes/admin/panel');
 
 var app = express();
 
@@ -141,7 +141,7 @@ app.use('/neck04', neck04Router);
 app.use('/toon', toonRouter);
 app.use('/contacto', contactoRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminRouter);
+app.use('/admin/panel', secured, panelRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
