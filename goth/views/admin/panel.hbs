@@ -1,1 +1,40 @@
-<h1>hola mundo</h1>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p id="usuario" class="text-end">Hola {{usuario}} <a href="" class="btn btn-danger">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a></p>
+        </div>
+    </div>
+    <div class="row" id="cab">
+        <div class="col-7">
+            <p>Canciones de la temporada</p>
+        </div>
+        <div class="col-5"  id="nuevo">
+            <a href="" class="btn btn-success"><i class="fas fa-plus-circle"></i> Nuevo</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-title">
+                        <th scope="col">Artista</th>
+                        <th scope="col">Álbum</th>
+                        <th scope="col">Canción</th>
+                        <th scope="col" class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table-content">
+                    <tr>
+                        <td>Artista</td>
+                        <td>Álbum</td>
+                        <td>Canción</td>
+                        <td class="text-end">
+                            <a href="" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
