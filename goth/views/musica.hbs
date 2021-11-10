@@ -22,23 +22,32 @@
     </div>
 </div>
 <div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero dolorum voluptate impedit, ullam
-        rerum saepe quo soluta adipisci ea inventore. Libero dolore accusamus nostrum ea. Fugit placeat voluptates ut.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, laboriosam architecto exercitationem sint optio
-        deleniti saepe dolores modi corrupti est? Accusantium aliquid ab doloremque autem cum dolor sint necessitatibus
-        ut?</p>
-    <ol class="content">
-        <li>Cancion 1</li>
-        <li>Cancion 2</li>
-        <li>Cancion 3</li>
-        <li>Cancion 4</li>
-        <li>Cancion 5</li>
-        <li>Cancion 6</li>
-        <li>Cancion 7</li>
-        <li>Cancion 8</li>
-        <li>Cancion 9</li>
-        <li>Cancion 10</li>
-    </ol>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero dolorum voluptate impedit, ullam rerum saepe
+        quo soluta adipisci ea inventore. Libero dolore accusamus nostrum ea. Fugit placeat voluptates ut. Lorem ipsum
+        dolor sit amet consectetur, adipisicing elit. Eaque, laboriosam architecto exercitationem sint optio deleniti
+        saepe dolores modi corrupti est? Accusantium aliquid ab doloremque autem cum dolor sint necessitatibus ut?
+    </p>
+</div>
+<div class="contenido">
+    <h2>Canciones</h2>
+    {{#each panel}}
+    <div class="panel">
+        <div class="artista">
+            <h3 class="h3a">Artista: </h3>
+            <h3 class="h3b"> {{artista}}</h3>
+        </div>
+        <div class="album">
+            <h4 class="h3a">Álbum: </h4>
+            <h4 class="h3b">{{album}}</h4>
+        </div>
+        <div class="cancion">
+        <h4 class="h3a">Cancion: </h4>
+        <h4 class="h3b">{{cancion}}</h4>
+        </div>
+    </div>
+    <hr />
+    {{/each}}
 </div>
 <div class="intros">
     <div class="intro">

@@ -8,6 +8,7 @@ main{
 }
 
 .intros{
+    margin-top: 50px;
     display:flex;
     justify-content:space-around;
     padding-bottom: 30px;
@@ -20,4 +21,51 @@ main{
 .content{
     color: #f5c0ec;
     line-height: 40px;
+}
+
+.panel{
+    background-color: #14001a;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contenido h2{
+    text-align: center;
+    color: #ff0;
+}
+
+.artista{
+    display:inline-flex;
+    flex-direction: row;
+}
+
+.artista h3{
+    margin-left: 5px;
+}
+
+.album{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.album h4{
+    margin-left: 5px;
+}
+
+.cancion{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.cancion h4{
+    margin-left: 5px;
+}
+
+.h3a{
+    color: #f57777;
+}
+
+.h3b{
+    color: #aac6fa;
 }

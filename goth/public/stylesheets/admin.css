@@ -53,3 +53,18 @@
     font-size: 20px;
     background-color: #000;
 }
+
+.base{
+    margin-bottom: 50px;
+}
+
+/* #grabar{
+    margin-left: 35%;
+} */
+
+.botones{
+    margin-left: 35%;
+    margin-right: 35%;
+    display: flex;
+    justify-content:space-between;
+}
