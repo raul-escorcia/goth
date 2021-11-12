@@ -15,14 +15,17 @@
                 <input type="text" class="form-control" id="cancion" name="cancion">
             </div>
             <div class="botones">
-            <button type="submit" class="btn btn-primary" id="grabar">Grabar</button>
-            <a href="/musica" class="btn btn-info" target="_blank"><i class="far fa-eye"></i></a>
-            <a href="/admin/panel" class="btn btn-success">Cancelar</a>
-            <a href="" class="btn btn-danger">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a>
+                <button type="submit" class="btn btn-primary" id="grabar">Grabar</button>
+                <a href="/musica" class="btn btn-info" target="_blank"><i class="far fa-eye"></i></a>
+                <a href="/admin/panel" class="btn btn-success">Cancelar</a>
+                <a href="" class="btn btn-danger">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a>
+            </div>
+            <div>
+                <p class="perror">Canción agregada correctamente</p>
             </div>
         </form>
         {{#if error}}
-            <p class="perror">{{message}}</p>
+        <p>{{message}}</p>
         {{/if}}
     </div>
 </div>

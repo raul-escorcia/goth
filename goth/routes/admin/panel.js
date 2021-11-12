@@ -23,12 +23,18 @@ router.get('/agregar', (req, res, next) => {
   });
 });
 
+router.get('/agregar2', (req, res, next) => {
+  res.render('admin/agregar2', {
+    layout: 'admin/layout'
+  });
+});
+
 router.post('/agregar', async (req, res, next) => {
   try {
     console.log(req.body);
     if (req.body.artista != "" && req.body.album != "" && req.body.cancion != "") {
-      await panelModel.insertCancion(req.body);
-      res.redirect('/admin/panel')
+      await panelModel.insertCancion(req.body)
+      res.redirect('/admin/panel/agregar2')
     } else {
       res.render('admin/agregar', {
         layout: 'admin/layout',
@@ -41,7 +47,37 @@ router.post('/agregar', async (req, res, next) => {
     res.render('admin/agregar', {
       layout: 'admin/layout',
       error: true,
-      message: 'no se cargo la novedad'
+      message: 'No se cargo la canción'
+    })
+  }
+})
+
+
+router.get('/modificar/:id', async(req, res, next) => {
+  var id = req.params.id;
+  var panel = await panelModel.getCancionById(id); 
+  res.render('admin/modificar',{
+    layout: 'admin/layout',
+    panel
+  })
+})
+
+router.post('/modificar', async(req, res, next) => {
+  try{
+    var obj={
+      artista: req.body.artista,
+      album: req.body.album,
+      cancion: req.body.cancion
+    }
+    console.log(obj);
+    await panelModel.modificarCancionById(obj, req.body.id);
+    res.redirect('/admin/panel')
+  } catch(error){
+    console.log(error)
+    res.render('admin/modificar',{
+      layout: 'admin/layout',
+      error: true,
+      message: 'no se modifico la información'
     })
   }
 })

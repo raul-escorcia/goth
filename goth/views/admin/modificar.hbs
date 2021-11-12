@@ -1,21 +1,22 @@
 <div class="container" style="margin-top: 80px; margin-bottom: 50px;">
     <div class="row">
-        <h2 class="text-center">Agregar una canción</h2>
-        <form action="/admin/panel/agregar" method="post">
+        <h2 class="text-center">Modificar canciones</h2>
+        <form action="/admin/panel/modificar" method="post">
             <div class="mb-3">
+                <input type="hidden" class="form-control" id="id" name="id" value="{{panel.id}}">
                 <label for="artista" class="form-label">Artista</label>
-                <input type="text" class="form-control" id="artista" name="artista">
+                <input type="text" class="form-control" id="artista" name="artista" value="{{panel.artista}}">
             </div>
             <div class="mb-3">
-                <label for="album" class="form-label">Álbum</label>
-                <input type="text" class="form-control" id="album" name="album">
+                <label for="Álbum" class="form-label">Álbum</label>
+                <textarea class="form-control" id="album" name="album">{{panel.album}}</textarea>
             </div>
             <div class="mb-3">
                 <label for="cancion" class="form-label">Canción</label>
-                <input type="text" class="form-control" id="cancion" name="cancion">
+                <textarea class="form-control" id="cancion" name="cancion">{{panel.cancion}}</textarea>
             </div>
             <div class="botones">
-            <button type="submit" class="btn btn-primary" id="grabar">Grabar</button>
+            <button type="submit" class="btn btn-primary">Modificar</button>
             <a href="/musica" class="btn btn-info" target="_blank"><i class="far fa-eye"></i></a>
             <a href="/admin/panel" class="btn btn-success">Cancelar</a>
             <a href="" class="btn btn-danger">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a>
