@@ -23,4 +23,27 @@ router.get('/agregar', (req, res, next) => {
   });
 });
 
+router.post('/agregar', async (req, res, next) => {
+  try {
+    console.log(req.body);
+    if (req.body.artista != "" && req.body.album != "" && req.body.cancion != "") {
+      await panelModel.insertCancion(req.body);
+      res.redirect('/admin/panel')
+    } else {
+      res.render('admin/agregar', {
+        layout: 'admin/layout',
+        error: true,
+        message: 'Todos los campos son requeridos'
+      })
+    }
+  } catch (error) {
+    console.log(error);
+    res.render('admin/agregar', {
+      layout: 'admin/layout',
+      error: true,
+      message: 'no se cargo la novedad'
+    })
+  }
+})
+
 module.exports = router;

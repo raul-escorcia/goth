@@ -12,4 +12,15 @@ async function deleteCancionById(id){
     return row;
 }
 
-module.exports = { getCanciones, deleteCancionById }
+async function insertCancion(obj){
+    try{
+        var query = 'insert into canciones set ?';
+        var rows = await pool.query(query, [obj]);
+        return rows;
+    } catch(error){
+        console.log(error);
+        throw error;
+    }
+}
+
+module.exports = { getCanciones, deleteCancionById, insertCancion }
