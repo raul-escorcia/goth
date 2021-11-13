@@ -37,4 +37,10 @@ async function modificarCancionById(obj, id){
     }
 }
 
-module.exports = { getCanciones, deleteCancionById, insertCancion, getCancionById, modificarCancionById }
+async function buscarCancion(busqueda){
+    var query = 'select * from canciones where artista like ? OR album like ? OR cancion like ?';
+    var rows = await pool.query(query, ['%' + busqueda + '%', '%' + busqueda + '%', '%' + busqueda + '%']);
+    return rows;
+}
+
+module.exports = { getCanciones, deleteCancionById, insertCancion, getCancionById, modificarCancionById, buscarCancion }

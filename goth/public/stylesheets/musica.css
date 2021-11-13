@@ -5,6 +5,7 @@ main{
 #top{
     text-align: center;
     color: #ff0;
+    font-size: 30px;
 }
 
 .intros{
@@ -33,6 +34,7 @@ main{
 .contenido h2{
     text-align: center;
     color: #ff0;
+    font-size: 30px;
 }
 
 .artista{
@@ -68,4 +70,10 @@ main{
 
 .h3b{
     color: #aac6fa;
+}
+
+.buscador{
+    /* background-color: red; */
+    margin: 20px;
+    text-align: right;
 }
