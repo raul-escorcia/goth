@@ -32,8 +32,8 @@
 <div class="contenido">
     <h2>Canciones</h2>
     <div class="buscador">
-        <form action="">
-            <input type"search">
+        <form action="/musica" method="get">
+            <input type"search" name="q" {{#if q}} value="{{q}}" {{/if}}>
             <button type="submit">Buscar</button>
         </form>
     </div>
@@ -55,6 +55,11 @@
     <hr />
     {{/each}}
 </div>
+{{#if is_search}}
+    {{#unless panel.length}}
+        <p class="busqueda">No se encontraron resultados para <b>"{{q}}"</b></p>
+    {{/unless}}
+{{/if}}
 <div class="intros">
     <div class="intro">
         <img src="images/musica/outtro/gathering.jpg" alt="gathering">
